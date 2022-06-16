@@ -1,0 +1,38 @@
+.user{
+    margin: 20px auto;
+    width: 220px;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+ul{
+    list-style-type: none;
+}
+.user__name{
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    font-size: 24px;
+}
+
+.user__username{
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    font-size: 20px;
+}
+
+.user__link{
+   
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.address__list{
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+
+}

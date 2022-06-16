@@ -1,0 +1,29 @@
+
+.header{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color:black;
+}
+.header_logo{
+    margin-left: 20px;
+    padding: 20px;
+    font-size: 26px;
+    display: inline;
+    color: white;
+    text-decoration: none;
+    
+}
+.navlist{
+padding: 20px;
+color: white;
+font-size: 26px;
+}
+.navitem{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}

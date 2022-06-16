@@ -1,0 +1,30 @@
+a{
+    display: inline;
+}
+.postlist{
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    display: flex;
+    width: 1280px;
+
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: left;
+    list-style-type: none;
+  
+}
+.postsitem{
+    margin: 0;
+    width: 270px;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+}
+.postsitem_link{
+    display: block;
+    text-decoration: none;
+    color: #000;
+  
+}
