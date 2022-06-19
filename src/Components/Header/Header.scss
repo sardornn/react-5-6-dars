@@ -16,6 +16,7 @@
     text-decoration: none;
     
 }
+
 .navlist{
 padding: 20px;
 color: white;
@@ -26,4 +27,8 @@ font-size: 26px;
     color: white;
     text-decoration: none;
     margin: 0 20px;
+}
+.navitem--active{
+    background-color:white;
+    color: black;
 }

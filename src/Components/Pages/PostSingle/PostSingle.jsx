@@ -1,15 +1,19 @@
 import { useEffect, useState } from 'react'
-import { useParams} from 'react-router-dom'
+import { useNavigate, useParams} from 'react-router-dom'
 import './PostSingle.scss'
 export const PostSingle = () =>{
     const [postSingle, setPostSingle] = useState([])
     const params = useParams();
-    console.log(params)
+  const navigate = useNavigate();
+
     useEffect ( ()=>{
         fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`)
         .then((res) => res.json())
         .then((data) => setPostSingle(data))
     }, [params])
+  useEffect(()=> { if(isNaN(params.postId)){
+    return navigate(-1)
+}},[])
     return(
         <>
         <div className='postsingle'>

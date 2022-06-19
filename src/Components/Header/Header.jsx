@@ -6,9 +6,15 @@ export const Header = () =>{
         <div className='header'>
         <Link className='header_logo' to='/'>Logo</Link>
         <nav className='navlist'>
-        <NavLink className='navitem' to='/'>Home</NavLink>
-        <NavLink className='navitem' to='/posts'>Posts</NavLink> 
-        <NavLink className='navitem' to='/profile'>Profile</NavLink> 
+        <NavLink className={({isActive})=> 
+            isActive? "navitem navitem--active" : 'navitem'
+        } to='/'>Home</NavLink>
+        <NavLink className={({isActive})=> 
+            isActive? "navitem navitem--active" : 'navitem'
+        } to='/posts'>Posts</NavLink> 
+        <NavLink className={({isActive})=> 
+            isActive? "navitem navitem--active" : 'navitem'
+        } to='/profile'>Profile</NavLink> 
 
         </nav>
         </div >
